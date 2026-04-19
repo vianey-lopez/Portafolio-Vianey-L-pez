@@ -62,3 +62,8 @@ window.addEventListener('load', () => {
   const initialHeight = slides[0].offsetHeight;
   track.parentElement.style.height = `${initialHeight}px`;
 });
+
+// Redirección al hacer clic en la foto
+document.getElementById("foto-perfil").addEventListener("click", function() {
+  document.getElementById("sobre-mi").scrollIntoView({ behavior: "smooth" });
+});
