@@ -104,7 +104,15 @@ nav ul li a:hover {
   background: #f4e3c1;
   color: #1c2c2e;
 }
-
+/* Responsivo para botones */
+@media (max-width: 768px) {
+  .btn {
+    display: block;        /* cada botón ocupa toda la línea */
+    width: 90%;            /* casi todo el ancho disponible */
+    margin: 0.5rem auto;   /* centrados con margen vertical */
+    text-align: center;    /* texto centrado */
+  }
+}
 .hero-image img {
   max-width: 300px;
   width: 100%;
@@ -315,7 +323,7 @@ nav ul li a:hover {
   width: 300px;
   overflow: hidden; /* evita que la imagen se salga del contenedor */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.01);
 }
 
 .card-img {
